@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const UseState = () => {
+const UseStateComponent = () => {
   const [arr, setArr] = useState<number[]>([]);
   const [name, setName] = useState<string | null>(null);
 
@@ -22,4 +22,4 @@ const UseState = () => {
   );
 };
 
-export default UseState;
+export default UseStateComponent;

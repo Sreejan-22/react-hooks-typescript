@@ -1,6 +1,6 @@
 import Header from "./Header";
-import UseState from "./components/UseState";
-import UseEffect from "./components/UseEffect";
+import UseStateComponent from "./components/UseState";
+import UseEffectComponent from "./components/UseEffect";
 import UseContextComponent from "./components/UseContext";
 import "./App.css";
 
@@ -10,10 +10,10 @@ function App() {
       <Header title="React Hooks Examples" color="blue" />
       <hr />
       <h3>useState</h3>
-      <UseState />
+      <UseStateComponent />
       <hr />
       <h3>useEffect</h3>
-      <UseEffect />
+      <UseEffectComponent />
       <hr />
       <h3>useContext</h3>
       <UseContextComponent />
