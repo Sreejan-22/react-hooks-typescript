@@ -23,7 +23,7 @@ const useFetch = (
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((d) => {
+      .then((d: Beverage[]) => {
         setData(d);
         setLoading(false);
       })
