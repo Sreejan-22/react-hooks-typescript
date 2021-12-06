@@ -1,8 +1,28 @@
 import { useState, useContext } from "react";
-import UserContext from "../store";
+import UserContext, { UserState } from "../store";
 
-const UserContextComponent = () => {
-  const name = useContext(UserContext);
-  const [user, setUser] = useState(name);
-  return <UserContext.Provider value={user}></UserContext.Provider>;
+const Consumer = () => {
+  const user = useContext(UserContext);
+
+  return (
+    <div>
+      <p>First: {user.first}</p>
+      <p>Last: {user.last}</p>
+    </div>
+  );
 };
+
+const UseContextComponent = () => {
+  const [user, setUser] = useState<UserState>({
+    first: "Jane",
+    last: "Smith",
+  });
+
+  return (
+    <UserContext.Provider value={user}>
+      <Consumer />
+    </UserContext.Provider>
+  );
+};
+
+export default UseContextComponent;

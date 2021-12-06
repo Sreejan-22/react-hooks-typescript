@@ -1,6 +1,7 @@
 import Header from "./Header";
 import UseState from "./components/UseState";
 import UseEffect from "./components/UseEffect";
+import UseContextComponent from "./components/UseContext";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       <UseEffect />
       <hr />
       <h3>useContext</h3>
+      <UseContextComponent />
+      <hr />
     </div>
   );
 }
