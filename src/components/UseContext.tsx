@@ -21,6 +21,9 @@ const UseContextComponent = () => {
   return (
     <UserContext.Provider value={user}>
       <Consumer />
+      <button onClick={() => setUser({ first: "Tom", last: "Cook" })}>
+        Change Name
+      </button>
     </UserContext.Provider>
   );
 };
