@@ -4,6 +4,7 @@ import UseEffectComponent from "./components/UseEffect";
 import UseContextComponent from "./components/UseContext";
 import UseReducerComponent from "./components/UseReducer";
 import UseRefComponent from "./components/UseRef";
+import CustomHookComponent from "./components/CustomHooks";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       <hr />
       <h3>useRef</h3>
       <UseRefComponent />
+      <hr />
+      <h3>Custom Hook(useFetch)</h3>
+      <CustomHookComponent />
       <hr />
     </div>
   );
