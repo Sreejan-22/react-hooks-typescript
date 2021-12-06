@@ -2,6 +2,7 @@ import Header from "./Header";
 import UseStateComponent from "./components/UseState";
 import UseEffectComponent from "./components/UseEffect";
 import UseContextComponent from "./components/UseContext";
+import UseReducerComponent from "./components/UseReducer";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       <hr />
       <h3>useContext</h3>
       <UseContextComponent />
+      <hr />
+      <h3>useReducer</h3>
+      <UseReducerComponent />
       <hr />
     </div>
   );
