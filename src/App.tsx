@@ -3,6 +3,7 @@ import UseStateComponent from "./components/UseState";
 import UseEffectComponent from "./components/UseEffect";
 import UseContextComponent from "./components/UseContext";
 import UseReducerComponent from "./components/UseReducer";
+import UseRefComponent from "./components/UseRef";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
       <hr />
       <h3>useReducer</h3>
       <UseReducerComponent />
+      <hr />
+      <h3>useRef</h3>
+      <UseRefComponent />
       <hr />
     </div>
   );
